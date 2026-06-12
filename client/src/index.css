@@ -1,0 +1,18 @@
+@import "tailwindcss";
+.nav-link {
+    @apply flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold transition-all duration-300 hover:bg-[#2d7dbf] hover:text-white hover:shadow-md;}
+.mobile-link {
+    @apply flex items-center gap-2 rounded-xl px-3 py-2 font-bold transition-all duration-300 hover:bg-[#2d7dbf] hover:text-white;}
+@keyframes float {
+    0%, 100% {
+    transform: translateY(0px)}
+    50% {
+    transform: translateY(-14px);}}
+.float-animation {
+    animation: float 4s ease-in-out infinite;}
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
